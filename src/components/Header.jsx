@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const navLinks = [
+  { to: "/", label: "Home" },
   { to: "/features", label: "Features" },
   { to: "/how-it-works", label: "How It Works" },
   { to: "/use-cases", label: "Use Cases" },
@@ -24,6 +25,7 @@ export default function Header() {
             className={({ isActive }) =>
               isActive ? "text-indigo-700 font-semibold underline" : "hover:text-indigo-600"
             }
+            end={link.to === "/"}
           >
             {link.label}
           </NavLink>
