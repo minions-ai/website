@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="px-8 py-8 bg-indigo-900 text-white mt-12">
+    <footer className="px-8 py-8 bg-indigo-900 text-white mt-12 dark:bg-gray-900 dark:text-gray-200 transition-colors">
       <div className="flex flex-col md:flex-row md:justify-between items-center mb-4">
         <div className="font-bold text-lg mb-2 md:mb-0">Minions AI</div>
         <div className="space-x-4 mb-2 md:mb-0">
@@ -18,10 +18,10 @@ export default function Footer() {
         </div>
       </div>
       <form className="flex flex-col md:flex-row items-center max-w-md mx-auto mt-4">
-        <input type="email" placeholder="Your email for updates" className="px-4 py-2 rounded-l bg-white text-gray-800 focus:outline-none w-full md:w-auto" />
-        <button type="submit" className="px-4 py-2 bg-indigo-600 rounded-r text-white font-semibold hover:bg-indigo-700 transition mt-2 md:mt-0">Subscribe</button>
+        <input type="email" placeholder="Your email for updates" className="px-4 py-2 rounded-l bg-white text-gray-800 focus:outline-none w-full md:w-auto dark:bg-gray-800 dark:text-gray-100" />
+        <button type="submit" className="px-4 py-2 bg-indigo-600 rounded-r text-white font-semibold hover:bg-indigo-700 transition mt-2 md:mt-0 dark:bg-indigo-500 dark:hover:bg-indigo-600">Subscribe</button>
       </form>
-      <div className="text-center text-indigo-200 text-sm mt-6">© {new Date().getFullYear()} Minions AI. All rights reserved.</div>
+      <div className="text-center text-indigo-200 text-sm mt-6 dark:text-indigo-400">© {new Date().getFullYear()} Minions AI. All rights reserved.</div>
     </footer>
   );
 } 
